@@ -56,24 +56,59 @@ body.active .wrapper .sidebar{
     left: 0px;
 }
 
+body.show .wrapper .menuInfo{
+    right: 0px;
+}
 body.active .wrapper .section{
     margin-left: 0;
     width: 100%;
 }
+
+.wrapper .menuInfo{
+    background-color: #c4cff8;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 93px;
+    right: -70%;
+    display: block;
+    font-size: 30px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.wrapper .menuInfo .shoppingcart{
+    background: rgb(174, 212, 248);
+    width: 10%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    border-right: 1px solid #1c5f96;
+}
+
+.wrapper .menuInfo .shoppingcart ul li{
+    padding: 20px 30px;
+}
+
+
+.wrapper .menuInfo .menuItems ul li .menuItem{
+    display: block;
+    padding: 20px 30px;
+    color: rgb(241, 237, 237);
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
 .wrapper .sidebar{
     background: rgb(153, 200, 243);
     position: fixed;
     top: 93px;
-    width: 500px;
+    width: 30%;
     height: 100%;
-    left: -500px;
+    left: -30%;
     padding: 20px 0;
     transition: all 0.5s ease;
-}
-
-.wrapper .sidebar .budgeteat{
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 .wrapper .sidebar ul li a{
@@ -124,3 +159,4 @@ body.active .wrapper .section{
 .wrapper .sidebar .NavButtons .right{
     float: right;
 }
+
