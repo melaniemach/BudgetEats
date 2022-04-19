@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#map{
+    height: 875px;
+    width: 100%;
+    display: block;
+    
+}
+
+body{
+    background: #f5f6fa;
+}
+
+.budgeteat{
+    background-color: lightblue;
+    height: 50px;
+    width: 100%;
+    display: inline-block;
+}
+.budgeteat img{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    margin: auto 20px;
+    background-color: lightblue;
+}
+
+.budgeteat h1{
+    position: inherit;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.wrapper .userinput{
+    background-color: beige;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 43px;
+    padding: 10px 0%;
+    transition: all .05s ease;
+}
+
+body.active .wrapper .sidebar{
+    left: 0px;
+}
+
+body.show .wrapper .menuInfo{
+    right: 0px;
+}
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+.wrapper .menuInfo{
+    background-color: #c4cff8;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 93px;
+    right: -70%;
+    display: block;
+    font-size: 30px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.wrapper .menuInfo .shoppingcart{
+    background: rgb(174, 212, 248);
+    width: 10%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    border-right: 1px solid #1c5f96;
+}
+
+.wrapper .menuInfo .shoppingcart ul li{
+    padding: 20px 30px;
+}
+
+
+.wrapper .menuInfo .menuItems ul li .menuItem{
+    display: block;
+    padding: 20px 30px;
+    color: rgb(241, 237, 237);
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.wrapper .sidebar{
+    background: rgb(153, 200, 243);
+    position: fixed;
+    top: 93px;
+    width: 30%;
+    height: 100%;
+    left: -30%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #1c5f96;
+    color: rgb(241, 237, 237);
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.wrapper .sidebar ul li a .icon img{
+    color: #dee4ec;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover{
+    color: #0c7db1;
+    background:rgb(231, 203, 203);
+    border-right: 2px solid (153, 200, 243);
+}
+
+.wrapper .sidebar ul li a:hover .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before{
+    display: block;
+}
+
+.wrapper .sidebar ul li .Resturaunt{
+    display: block;
+}
+
+.wrapper .sidebar .NavButtons .left,
+.wrapper .sidebar .NavButtons .right{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 57px;
+}
+
+.wrapper .sidebar .NavButtons .right{
+    float: right;
+}
+

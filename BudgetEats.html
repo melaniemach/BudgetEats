@@ -1,0 +1,215 @@
+<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetEats</title>
+</head>
+<body>
+    <div class = "budgeteat">
+        <img src="Images/BudgetFood.png" alt="Budget Food Logo">
+        <h1>Budget Eats</h1>
+    </div>
+    <div class = "wrapper">
+        <div class="userinput">
+            <form action="#">
+                <p>
+                    <label for "userLocation">Location</label>
+                    <input type = "text" name="location" id="userLocation" placeholder="Zipcode/Address">
+                    <label for="userBudget">Budget</label>
+                    <input type="text" name="budget" id="userBudget" placeholder="Please enter a budget"
+                </p>
+                <button class="toggle-collapse" id="toggle-button">Search</button>
+            </form>
+        </div>
+        <div id="map"></div>
+  
+        <!--Add a script by google -->
+        <script src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAgpblaSZ6c52k5uoVQ_xvIalwv6keFTXA&callback=initMap&libraries=&v=weekly"
+            async>
+        </script>
+      
+        <script>
+      
+            // Initialize and add the map
+            function initMap() {
+      
+                // The location of Geeksforgeeks office
+                const startLocation = {
+                    lat: 34.052235,
+                    lng: -118.243683
+                };
+      
+                // Create the map, centered at gfg_office
+                const map = new google.maps.Map(
+                        document.getElementById("map"), {
+      
+                    // Set the zoom of the map
+                    zoom: 17.56,
+                    center: startLocation,
+                });
+            }
+        </script>
+        <div class="menuInfo" id="menu">
+            <div class="shoppingcart">
+                <p>Shopping Cart</p>
+                <p>____________</p>
+                <ul>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="cartItem"> Placeholder</span>
+                    </li>
+                </ul>
+                <p>Total:</p>
+            </div>
+
+            <p>
+                Menu Items
+            </p>
+            <div class="menuItems">
+                <div class="borderLeft"></div>
+                <ul>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class= "menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+                    <li>
+                        <span class ="menuItem"> Placeholder</span>
+                    </li>
+
+                </ul>
+
+            </div>
+            
+        </div>
+
+        <div class = "sidebar" id="sbar">
+
+            <ul>
+                <li>
+                    <a href="#" class = "resSelection" >
+                        <span class = "icon"><i><img src="https://yt3.ggpht.com/ytc/AKedOLS5rTsrjzAgo0yJdrdHBSdEskUL4JsSwCvDCfcKdw=s900-c-k-c0x00ffffff-no-rj" alt="Mcdonald's"></span>
+                        <span class = "Resturaunt">Mcdonald's</span>
+                        <span class = "Address"> 123 Placeholder st.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class = "resSelection">
+                        <span class = "icon"><i><img src="https://static.dezeen.com/uploads/2021/01/burger-king-logo-rebrand-bk-jkr_logo_dezeen_2364_col_0.jpg" alt="Burger King"></span>
+                        <span class = "Resturaunt">Burger King</span>
+                        <span class = "Address"> 123 Placeholder st.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class = "resSelection">
+                        <span class = "icon"><i><img src="https://media-assets-04.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-565461-wendys--default--1280.png" alt="Wendy's"></span>
+                        <span class = "Resturaunt">Wendy's</span>
+                        <span class = "Address"> 123 Placeholder st.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class = "resSelection">
+                        <span class = "icon"><i><img src="https://media-assets-04.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-565461-wendys--default--1280.png" alt="Wendy's"></span>
+                        <span class = "Resturaunt">Wendy's</span>
+                        <span class = "Address"> 123 Placeholder st.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class = "resSelection">
+                        <span class = "icon"><i><img src="https://media-assets-04.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-565461-wendys--default--1280.png" alt="Wendy's"></span>
+                        <span class = "Resturaunt">Wendy's</span>
+                        <span class = "Address"> 123 Placeholder st.</span>
+                    </a>
+                </li>               
+            </ul>
+
+            <form action="#" class="NavButtons">
+                <button class="left">&#8592</button>
+                <button class="right">&#8594</button>
+            </form>
+
+        </div>
+
+        
+    </div>
+
+    
+    
+    <script>
+         var hamburger = document.querySelector(".toggle-collapse");
+            hamburger.addEventListener("click", function(){
+                document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+
+<script>
+    var cheeseburger = document.querySelectorAll(".resSelection");
+        for(var i = 0; i < cheeseburger.length; i++){
+            cheeseburger[i].addEventListener("click", function(){
+           document.querySelector("body").classList.toggle("show");
+            })
+        }       
+   
+</script>
+
+</body>
+</html>
