@@ -59,10 +59,16 @@ body.active .wrapper .sidebar{
 body.show .wrapper .menuInfo{
     right: 0px;
 }
-body.active .wrapper .section{
-    margin-left: 0;
-    width: 100%;
+
+
+body.hide .wrapper .sidebar{
+    left: -30%;
 }
+
+body.hide .wrapper .menuInfo{
+    right: -70%;
+}
+
 
 .wrapper .menuInfo{
     background-color: #c4cff8;
@@ -91,15 +97,45 @@ body.active .wrapper .section{
 }
 
 
-.wrapper .menuInfo .menuItems ul li .menuItem{
+.wrapper .menuInfo .menuItems ul li button{
     display: block;
+    width: 84%;
     padding: 20px 30px;
+    background-color: #0c7db1;
     color: rgb(241, 237, 237);
+    left: 15%;
     font-size: 20px;
     position: relative;
-    text-align: center;
+    text-align:right;
 }
 
+
+.wrapper .menuInfo .MenuNavButtons .Menuright{
+    position: absolute;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    width: 35%;
+    right: 1%;
+    font-size: 35px;
+}
+
+.wrapper .menuInfo .MenuNavButtons .Menuleft{
+    position: absolute;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    width: 35%;
+    left: 15%;
+    font-size: 35px;
+}
+
+
+.wrapper .menuInfo .menuItems ul li button:hover{
+    color: #0c7db1;
+    background:rgb(231, 203, 203);
+    border-right: 2px solid (153, 200, 243);
+}
 .wrapper .sidebar{
     background: rgb(153, 200, 243);
     position: fixed;
@@ -111,9 +147,11 @@ body.active .wrapper .section{
     transition: all 0.5s ease;
 }
 
-.wrapper .sidebar ul li a{
+.wrapper .sidebar ul li button{
+    background-color: #0c7db1;
     display: block;
     padding: 20px 30px;
+    width: 100%;
     border-bottom: 1px solid #1c5f96;
     color: rgb(241, 237, 237);
     font-size: 20px;
@@ -121,23 +159,23 @@ body.active .wrapper .section{
     text-align: center;
 }
 
-.wrapper .sidebar ul li a .icon img{
+.wrapper .sidebar ul li button .icon img{
     color: #dee4ec;
     width: 60px;
     height: 60px;
     display: inline-block;
 }
-.wrapper .sidebar ul li a:hover{
+.wrapper .sidebar ul li button:hover{
     color: #0c7db1;
     background:rgb(231, 203, 203);
     border-right: 2px solid (153, 200, 243);
 }
 
-.wrapper .sidebar ul li a:hover .icon{
+.wrapper .sidebar ul li button:hover .icon{
     color: #0c7db1;
 }
 
-.wrapper .sidebar ul li a:hover:before{
+.wrapper .sidebar ul li button:hover:before{
     display: block;
 }
 
